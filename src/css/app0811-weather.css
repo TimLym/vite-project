@@ -7,15 +7,6 @@ body {
     margin: 0 auto;
 }
 
-.box {
-    /* display: flex; */
-    width: 450px;
-    /* flex-wrap: wrap; */
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px 20px;
-}
-
 .wrap {
     display: flex;
     flex-wrap: wrap;
@@ -40,10 +31,14 @@ h3 {
 .container {
     display: flex;
     flex-direction: column;
+    width: 450px;
+    margin: 10px 20px;
     /* flex-wrap: wrap; */
     justify-content: center;
     /* width: 100%; */
     /* gap: 10px; */
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .cardContent {
