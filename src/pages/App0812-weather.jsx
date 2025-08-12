@@ -16,7 +16,7 @@ const Weather = () => {
             // 取得public中的json檔案
             // const data =await axios.get("./F-C0032-001.json");
             // 取得src中的json檔案
-            const data = await axios.get("./src/json/F-C0032-001.json");
+            const data = await axios.get("./F-C0032-001.json");
             // 利用 import 方法 =>無法，axios 只能對應路徑
 
             // 取得各縣市氣象資訊
