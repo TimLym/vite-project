@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: 0 200px;
+    margin: 0 auto;
 }
 
 .box {
@@ -40,7 +40,6 @@ h3 {
 .container {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     /* flex-wrap: wrap; */
     justify-content: center;
     /* width: 100%; */
@@ -56,18 +55,13 @@ h3 {
 
 .weather-card {
     display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-
+    justify-content: start;
 }
 
 .card-body {
-    justify-content: center;
-    align-self: center;
     text-align: center;
     width: 100%;
     padding: 0 20px;
-
 }
 
 .card-time {
@@ -81,8 +75,9 @@ h3 {
 }
 
 img {
-    width: 50%;
-    object-fit: cover;
+    width: 100%;
+    height: 50px;
+    /* object-fit: cover; */
     /*原圖等比例縮放*/
 }
 
