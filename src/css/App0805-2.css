@@ -1,0 +1,93 @@
+#root {
+    background-color: rgb(235, 233, 229);
+}
+
+.backGround {
+    background-color: rgb(175, 235, 235);
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.appBar-container {
+    top: 0;
+    position: sticky;
+    flex-direction: column;
+    z-index: 500;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+
+#logo {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.appBar-title {
+    padding: 8px;
+    position: relative;
+    display: flex;
+}
+
+.appBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    background-color: rgb(253, 253, 248);
+    padding-top: 5px;
+    padding: 13px;
+}
+
+.appBar-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.appBar-btn {
+    display: flex;
+    align-items: center;
+}
+
+.wrap {
+    
+    padding: 16px;
+
+}
+
+h1 {
+    
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+p {
+    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: rgb(54, 99, 9);
+    text-decoration: none;
+}

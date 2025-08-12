@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 200px;
+}
+
+.box {
+    /* display: flex; */
+    width: 450px;
+    /* flex-wrap: wrap; */
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 20px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background-color: antiquewhite;
+}
+
+h3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* width: 100%; */
+    /* gap: 10px; */
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+
+}
+
+.weather-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+
+}
+
+.card-body {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+
+}
+
+.card-time {
+    width: 70px;
+    justify-self: center;
+    margin: 10px;
+}
+
+.card-img {
+    padding: 20px 0;
+}
+
+img {
+    width: 50%;
+    object-fit: cover;
+    /*原圖等比例縮放*/
+}
+
+.card-status {
+    text-align: center;
+    width: 100%;
+}
+
+.rain-rate-sec {
+    display: flex;
+    justify-self: center;
+    padding: 20px 0;
+}
