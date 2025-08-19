@@ -16,7 +16,7 @@ const Weather = () => {
             // 取得public中的json檔案
             // const data =await axios.get("./F-C0032-001.json");
             // 取得src中的json檔案
-            const data = await axios.get("./F-C0032-001.json");
+            const data = await axios.get("./src/json/F-C0032-001.json");
             // 利用 import 方法 =>無法，axios 只能對應路徑
 
             // 取得各縣市氣象資訊
@@ -32,44 +32,47 @@ const Weather = () => {
         <>
             <div className="wrap" >
                 {citys.map((city) => {
-                    return <div className='container' key={city.locationName}>
-                        <h2>
-                            {city.locationName}
-                            {console.log(city.locationName)}
-                        </h2>
-                        <div className="cardContent">
-                            {
-                                city.weatherElement[0].time.map((e, index) => {
-                                    return <WeatherCard key={index}
-                                        date={
-                                            new Date(e.startTime).toLocaleString(undefined, {
-                                                day: 'numeric',
-                                            })
-                                        }
-                                        timeStart={
-                                            new Date(e.startTime).toLocaleString(undefined, {
-                                                hour: 'numeric',
-                                                minute: 'numeric'
-                                            })
-                                        }
-                                        comma="~"
-                                        timeEnd={
-                                            new Date(e.endTime).toLocaleString(undefined, {
-                                                hour: 'numeric',
-                                                minute: 'numeric'
-                                            })
-                                        }
-                                        weatherImgUrl={`./weatherIcon/${e.parameter.parameterName}.svg`}
-                                        status={e.parameter.parameterName}
-                                        rainRate={city.weatherElement[4].time[index].parameter.parameterName}>
-                                    </WeatherCard>
-                                })
-                            }
+                    return <div className='box' key={city.locationName}>
+                        <div className='container'>
+                            <h2>
+                                {city.locationName}
+                                {console.log(city.locationName)}
+                            </h2>
+                            <div className="cardContent">
+                                {
+                                    city.weatherElement[0].time.map((e, index) => {
+                                        return <WeatherCard key={index}
+                                            date={
+                                                new Date(e.startTime).toLocaleString(undefined, {
+                                                    day: 'numeric',
+                                                })
+                                            }
+                                            timeStart={
+                                                new Date(e.startTime).toLocaleString(undefined, {
+                                                    hour: 'numeric',
+                                                    minute: 'numeric'
+                                                })
+                                            }
+                                            comma="~"
+                                            timeEnd={
+                                                new Date(e.endTime).toLocaleString(undefined, {
+                                                    hour: 'numeric',
+                                                    minute: 'numeric'
+                                                })
+                                            }
+                                            weatherImgUrl={`./weatherIcon/${e.parameter.parameterName}.svg`}
+                                            status={e.parameter.parameterName}
+                                            rainRate={city.weatherElement[4].time[index].parameter.parameterName}>
+                                        </WeatherCard>
+                                    })
+                                }
+                            </div>
+
                         </div>
                     </div>
                 })}
 
-            </div >
+            </div>
         </>
     )
 }
