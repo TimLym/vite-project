@@ -1,0 +1,23 @@
+table {
+    width: 500px;
+    margin-top: 20px;
+    tbody {
+        tr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px dashed #ccc;
+            td{
+                flex: 1;                
+                padding: 5px;                
+                &:nth-child(2) {
+                    flex: 3;
+                }
+                img{
+                    width: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

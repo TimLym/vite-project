@@ -1,0 +1,26 @@
+.wrap {
+    a {
+        text-decoration: none;
+        color: red;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        .ttp-show {
+            display: none;
+        }
+
+    }
+}
+
+#ttp-panel {
+    background-color: white;
+    width: 200px;
+    text-align: left;
+    border: 3px solid #ccc;
+    position: absolute;
+    z-index: 99;
+    padding: 15px;
+    display: none;
+}
